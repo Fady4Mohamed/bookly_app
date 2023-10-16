@@ -9,7 +9,7 @@ final String image;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.of(context).size.height*.35,
+      height: MediaQuery.of(context).size.height*.3,
       child: AspectRatio(
         aspectRatio: 2.8/4,
         child: Container(

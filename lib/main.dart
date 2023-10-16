@@ -2,6 +2,7 @@ import 'package:bookly_app/core/unite/SingleTones.dart';
 import 'package:bookly_app/features/home/data/rebo/homerebo.dart';
 import 'package:bookly_app/features/home/presentation/manger/cubit/Neawsedbooks/newsedbooks_cubit.dart';
 import 'package:bookly_app/features/home/presentation/manger/cubit/featerCubit/featur_book_cubit.dart';
+import 'package:bookly_app/features/home/presentation/manger/cubit/searchCubit/search_books_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -27,6 +28,7 @@ class MyApp extends StatelessWidget {
           BlocProvider(
             create: (context) => NewsedbooksCubit(getit.get<homerebo>()),
           ),
+         
         ],
       child: GetMaterialApp(
         debugShowCheckedModeBanner: false,

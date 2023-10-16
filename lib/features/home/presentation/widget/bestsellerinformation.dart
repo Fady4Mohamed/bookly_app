@@ -30,11 +30,17 @@ class bestsellerinformation extends StatelessWidget {
           ),
           Row(
             children: [
-              Text(
-                  book.saleInfo!.listPrice != null
-                      ? '${(book.saleInfo!.listPrice!.amount!)}'
-                      : 'Not for (E)sele',
-                  style:const TextStyle(fontSize: 18, fontWeight: FontWeight.w600)),
+              SizedBox(
+                width: MediaQuery.of(context).size.width*.3,
+                child: Text(
+                    book.saleInfo!.listPrice != null
+                        ? '${(book.saleInfo!.listPrice!.amount!)}'
+                        : 'Not for (E)sele',
+                    style:const TextStyle(fontSize: 16, fontWeight: FontWeight.w600,),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    ),
+              ),
               const Spacer(
                 flex: 1,
               ),

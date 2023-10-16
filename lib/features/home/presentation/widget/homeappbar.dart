@@ -21,7 +21,8 @@ class homeappbar
          GestureDetector(
           child: Image.asset(AssetsImage.searchicon,height: 35,),
           onTap: () {
-            Navigator.push(context, MaterialPageRoute(builder: (context) {
+            Navigator.push(context, MaterialPageRoute(
+              builder: (context) {
               return Searchview();
             },));
           },
